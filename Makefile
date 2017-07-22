@@ -1,6 +1,6 @@
 
 PAGES = \
-	built/TWiR-CotW-list.html
+	built/TWiR_CotW_list.html
 
 HAVE_NIX_SHELL = which nix-shell >/dev/null 2>&1
 

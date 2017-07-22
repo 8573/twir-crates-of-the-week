@@ -111,7 +111,7 @@ fn validate_cotw_list(list: &[CotwEntry]) -> Result<()> {
 fn write_cotw_list(list: Vec<CotwEntry>) -> Result<()> {
     fs::create_dir_all("built")?;
 
-    let mut file = BufWriter::new(File::create("built/TWiR-CotW-list.adoc")?);
+    let mut file = BufWriter::new(File::create("built/TWiR_CotW_list.adoc")?);
 
     writeln!(
         file,
