@@ -1,8 +1,8 @@
+before_script:
+  - dnf -y --best install rust cargo
+
 pages:
   image: asciidoctor/docker-asciidoctor
-  before_script:
-    - apt-get update -yqq
-    - apt-get install -yqq --no-install-recommends rustc build-essential
   script:
     - make html
     - mv built public
