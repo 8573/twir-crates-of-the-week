@@ -4,3 +4,13 @@ version = "0.1.0"
 authors = ["c74d <8573dd@gmail.com>"]
 
 [dependencies]
+error-chain = "0.10"
+itertools = "0.6"
+lazy_static = "0.2"
+serde = "1"
+serde_derive = "1"
+serde_yaml = "0.7"
+slog = "2"
+slog-async = "2"
+slog-term = "2"
+time = "0.1"
