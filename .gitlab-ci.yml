@@ -4,7 +4,8 @@ before_script:
 pages:
   image: asciidoctor/docker-asciidoctor
   script:
-    - make html
+    - make run
+    - asciidoctor -b xhtml5 built/*.adoc
     - mv built public
   artifacts:
     paths:
