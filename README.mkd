@@ -6,7 +6,10 @@ The weekly periodical [_This Week in Rust_] often honors a [Rust]
 the week&#8221;. This repository contains a list of those crates in [YAML],
 and a Rust program for rendering that list as [HTML].
 
+[**View the latest rendered list of Crates of the Week**][CotW-list-HTML]
+
 [_This Week in Rust_]: <https://this-week-in-rust.org>
 [Rust]: <https://www.rust-lang.org>
 [YAML]: <https://en.wikipedia.org/wiki/YAML>
 [HTML]: <https://en.wikipedia.org/wiki/HTML>
+[CotW-list-HTML]: <https://c74d.gitlab.io/twir-crates-of-the-week/TWiR-CotW-list.html>
