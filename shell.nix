@@ -4,6 +4,7 @@ stdenv.mkDerivation rec {
   name = "twir-cotw-list.rs";
 
   nativeBuildInputs = [
+    asciidoctor
     cargo
     clang
     rustc
