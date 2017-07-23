@@ -71,7 +71,7 @@ error_chain! {
 #[derive(Debug)]
 struct CotwEntry {
     date: Tm,
-    id: String,
+    id: Option<String>,
     url: Option<String>,
 }
 
@@ -135,13 +135,15 @@ as "`Crate of the Week`".
     )?;
 
     for CotwEntry { date, id, url } in list {
-        writeln!(
-            file,
-            "| {date} | link:{url}[{id}]\n",
-            date = date.strftime("%F")?,
-            id = id,
-            url = url.unwrap_or_else(|| format!("https://crates.io/crates/{id}", id = id)),
-        )?;
+        if let Some(crate_id) = id {
+            writeln!(
+                file,
+                "| {date} | link:{url}[{id}]\n",
+                date = date.strftime("%F")?,
+                id = crate_id,
+                url = url.unwrap_or_else(|| format!("https://crates.io/crates/{id}", id = crate_id)),
+            )?;
+        }
     }
 
     writeln!(file, "|===")?;
@@ -189,29 +191,31 @@ impl<'de> serde::Deserialize<'de> for CotwEntry {
                 let mut id = None;
                 let mut url = None;
 
-                while let Some((key, value)) = map_access.next_entry()? {
+                while let Some(key) = map_access.next_key()? {
                     match key {
                         Field::Date => {
                             match date {
-                                None => date = Some(value),
+                                None => date = Some(map_access.next_value()?),
                                 Some(_) => return Err(E::duplicate_field("date")),
                             }
                         }
                         Field::Id => {
                             match id {
-                                None => id = Some(value),
+                                None => id = Some(map_access.next_value()?),
                                 Some(_) => return Err(E::duplicate_field("id")),
                             }
                         }
                         Field::Nominator => {
                             // TODO
+                            let _: String = map_access.next_value()?;
                         }
                         Field::Note => {
                             // TODO
+                            let _: String = map_access.next_value()?;
                         }
                         Field::Url => {
                             match url {
-                                None => url = Some(value),
+                                None => url = Some(map_access.next_value()?),
                                 Some(_) => return Err(E::duplicate_field("url")),
                             }
                         }
@@ -225,7 +229,7 @@ impl<'de> serde::Deserialize<'de> for CotwEntry {
                             &"a date of the form YYYY-MM-DD",
                         )))
                     })?,
-                    id: id.ok_or(E::missing_field("id"))?.to_owned(),
+                    id: id.ok_or(E::missing_field("id"))?,
                     url,
                 })
             }
