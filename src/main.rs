@@ -103,6 +103,13 @@ fn validate_cotw_list(list: &[CotwEntry]) -> Result<()> {
                     date)";
                    "date" => date.strftime("%F")?.to_string(), "crate" => id);
         }
+
+        if date > &(prev.date + Duration::weeks(1)) {
+            warn!(LOG,
+                  "Crate of the Week entry is dated over a week later than preceding entry; one \
+                   or more entries may be missing";
+                  "date" => date.strftime("%F")?.to_string(), "crate" => id);
+        }
     }
 
     Ok(())
