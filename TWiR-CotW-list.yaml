@@ -124,6 +124,10 @@
   id: gcc
   note: "a crate to easily use the local C compiler, which makes FFI with a build script a breeze. Thanks to [Ulrik Sverdrup](https://users.rust-lang.org/users/bluss) for the suggestion!"
 
+- date: 2016-04-18
+  id: null
+  note: "There was no TWiR issue this week."
+
 - date: 2016-04-25
   id: owning_ref
   note: "which contains a reference type that can carry its owner with it. Thanks to [Diwic](https://users.rust-lang.org/users/diwic) for the suggestion!"
@@ -144,6 +148,10 @@
   id: parking_lot
   note: "which gives us synchronization primitives (Mutex, RWLock, CondVar and friends) that are both smaller and faster than the standard library's implementations."
 
+- date: 2016-05-30
+  id: null
+  note: "No crate was nominated."
+
 - date: 2016-06-06
   id: pbr
   note: "which gives us a simple way to set up a progress bar for our applications. Thanks to Lukas Kalbertodt for the suggestion!"
@@ -160,6 +168,10 @@
   id: reustmann
   note: "a Von-Neumann Architecture written in Rust."
 
+- date: 2016-07-12
+  id: null
+  note: "No crate was selected."
+
 - date: 2016-08-02
   id: lru_time_cache
   note: "a simple but complete least-recently-used cache implementation. Thanks [gregwtmtno](https://users.rust-lang.org/users/gregwtmtno) for the suggestion."
@@ -171,6 +183,10 @@
 - date: 2016-08-16
   id: font-rs
   note: "yet another pure Rust font renderer, which is incomplete, but *very* fast. Thanks [StefanoD](https://users.rust-lang.org/users/StefanoD) for the suggestion."
+
+- date: 2016-08-23
+  id: null
+  note: "No crate was selected."
 
 - date: 2016-09-13
   id: tokio
@@ -184,17 +200,45 @@
   id: ripgrep
   note: "In case you've missed it, this is a grep/ag/pt/whatever search tool you use replacement that absolutely smokes the competition in most performance tests. Thanks to [DanielKeep](https://users.rust-lang.org/users/DanielKeep) for the suggestion!"
 
+- date: 2016-10-04
+  id: null
+  note: "No crate was selected."
+
+- date: 2016-10-11
+  id: null
+  note: "No crate was selected."
+
+- date: 2016-10-25
+  id: null
+  note: "No crate was selected."
+
 - date: 2016-11-01
   id: app_dirs
   note: "app_dirs lets you put your app's data in the right place on every platform."
+
+- date: 2016-11-08
+  id: null
+  note: "No crate was selected."
+
+- date: 2016-11-15
+  id: null
+  note: "No crate was selected."
 
 - date: 2016-11-22
   id: cargo-benchcmp
   note: "`cargo-benchcmp` generates nice before-after summaries for benchmarks."
 
+- date: 2016-11-29
+  id: null
+  note: "No crate was nominated."
+
 - date: 2016-12-06
   id: seahash
   note: "a statistically well-tested fast hash. Thanks to Vikrant Chaudhary for the suggestion! [Submit your suggestions and votes for next week][submit_crate]!"
+
+- date: 2016-12-13
+  id: null
+  note: "No crate was nominated."
 
 - date: 2016-12-20
   id: ruru
@@ -216,6 +260,10 @@
 - date: 2017-01-17
   id: alacritty
   note: "an OpenGL-propelled Terminal application. Really fast, nice looking. Missing scrollback. Thanks to Vikrant for the suggestion!"
+
+- date: 2017-01-24
+  id: null
+  note: "No crate was nominated."
 
 - date: 2017-01-31
   id: tantivy
@@ -246,6 +294,14 @@
   url: https://github.com/japaric/utest
   note: "a testing framework for embedded software. Thanks to [nasa42](https://users.rust-lang.org/users/nasa42) for the suggestion."
 
+- date: 2017-03-21
+  id: null
+  note: "No crate was selected."
+
+- date: 2017-04-18
+  id: null
+  note: "No crate was selected."
+
 - date: 2017-04-25
   id: pq
   note: "a crate to generically decode protobuf messages. Thanks to [sevagh](https://users.rust-lang.org/users/sevagh) for the suggestion."
@@ -261,3 +317,16 @@
 - date: 2017-05-16
   id: px8
   note: "a Rust implementation of an Open Source fantasy console. Thanks to [hallucino](https://users.rust-lang.org/users/hallucino) for the suggestion."
+
+- date: 2017-05-23
+  id: null
+  note: "No crate was nominated."
+
+- date: 2017-05-30
+  id: null
+  note: "No crate was nominated."
+
+- date: 2017-07-11
+  id: null
+  note: "No crate was nominated."
+

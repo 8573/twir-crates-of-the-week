@@ -1,10 +1,10 @@
 _This Week in Rust_ Crates of the Week list
 ========
 
-The weekly periodical [_This Week in Rust_] often honors a [Rust]
-&#8220;crate&#8221; &#8212; a library or program &#8212; as &#8220;crate of
-the week&#8221;. This repository contains a list of those crates in [YAML],
-and a Rust program for rendering that list as [HTML].
+The periodical [_This Week in Rust_] often honors a [Rust] &#8220;crate&#8221;
+&#8212; a library or program &#8212; as &#8220;crate of the week&#8221;. This
+repository contains a list of those crates in [YAML], and a Rust program for
+rendering that list as [HTML].
 
 [**View the latest rendered list of Crates of the Week**][CotW-list-HTML]
 
