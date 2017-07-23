@@ -97,6 +97,13 @@ fn validate_cotw_list(list: &[CotwEntry]) -> Result<()> {
              url: _,
          }) in list.iter().tuple_windows()
     {
+        if date == &prev.date {
+            warn!(LOG,
+                   "Crate of the Week entry is dated the same as preceding entry; this may be a \
+                    typo";
+                   "date" => date.strftime("%F")?.to_string(), "crate" => id);
+        }
+
         if !(date >= &prev.date) {
             error!(LOG,
                    "Crate of the Week entry is out of order (it follows an entry that has a later \
