@@ -24,12 +24,13 @@ use std::fs::File;
 use std::io;
 use std::io::BufWriter;
 use std::io::Write;
+use time::Duration;
 use time::Tm;
 
 lazy_static! {
     static ref LOG: slog::Logger = {
         use slog::Drain;
-        let decorator = slog_term::PlainDecorator::new(std::io::stdout());
+        let decorator = slog_term::PlainDecorator::new(std::io::stderr());
         let drain = slog_term::CompactFormat::new(decorator).build().fuse();
         let drain = slog_async::Async::new(drain).build().fuse();
         slog::Logger::root(drain, o!())
