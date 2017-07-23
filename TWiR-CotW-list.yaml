@@ -164,6 +164,10 @@
   id: error-chain
   note: "which feels like the missing piece in Rust's `Result`-based error-handling puzzle. Thanks to [KodrAus](https://users.rust-lang.org/users/KodrAus) for the suggestion."
 
+- date: 2016-06-27
+  id: bins
+  note: "that lets us programmatically create pastebins and is now our Crate of the Week! Thanks, jkcclemens!"
+
 - date: 2016-07-05
   id: reustmann
   note: "a Von-Neumann Architecture written in Rust."
@@ -171,6 +175,14 @@
 - date: 2016-07-12
   id: null
   note: "No crate was selected."
+
+- date: 2016-07-19
+  id: cargo-modules
+  note: "which gives us the `cargo modules` subcommand that shows the module structure of our crates in a tree view, optionally warning of orphans. Thanks, Vincent!"
+
+- date: 2016-07-26
+  id: trace
+  note: "a syntax extension to insert `print!` statements to functions to help trace execution. Thanks, gsingh93!"
 
 - date: 2016-08-02
   id: lru_time_cache
@@ -187,6 +199,14 @@
 - date: 2016-08-23
   id: null
   note: "No crate was selected."
+
+- date: 2016-08-30
+  id: ring
+  note: "Brian Smith's Rust crypto implementation, which is finally on crates.io as this week's crate."
+
+- date: 2016-09-06
+  id: accurate
+  note: "a way to do accurate floating point sums. Thanks to lifthrasir for the suggestion."
 
 - date: 2016-09-13
   id: tokio
@@ -207,6 +227,10 @@
 - date: 2016-10-11
   id: null
   note: "No crate was selected."
+
+- date: 2016-10-18
+  id: xargo
+  note: "for effortless cross compilation of Rust programs to custom bare-metal targets like ARM Cortex-M. It recently reached version 0.2.0 and you can read the announcement here."
 
 - date: 2016-10-25
   id: null
@@ -298,6 +322,18 @@
   id: null
   note: "No crate was selected."
 
+- date: 2017-03-28
+  id: pretty_assertions
+  note: "which replaces the standard ones to make them shiny. Thanks to [willi_kappler](https://users.rust-lang.org/users/willi_kappler) for the suggestion!"
+
+- date: 2017-04-04
+  id: fst
+  note: "which contains Finite State Transducers and assorted algorithms that use them (e.g. fuzzy text search). Thanks to [Jules Kerssemakers](https://users.rust-lang.org/users/juleskers) for the suggestion!"
+
+- date: 2017-04-11
+  id: skeptic
+  note: "a cargo subcommand to doctest your README.md. Thanks to [staticassert](https://users.rust-lang.org/users/staticassert) for the suggestion!"
+
 - date: 2017-04-18
   id: null
   note: "No crate was selected."
@@ -326,7 +362,31 @@
   id: null
   note: "No crate was nominated."
 
+- date: 2017-06-06
+  id: array_tool
+  note: "a crate with some nice extra functionality for `Vec`s and `String`s. Thanks to [danielpclark](https://users.rust-lang.org/u/danielpclark) for the suggestion!"
+
+- date: 2017-06-13
+  id: structopt
+  note: "a crate that lets your auto-derive your command-line options from a struct to parse them into. Thanks to [m4b](https://users.rust-lang.org/u/m4b) for the suggestion!"
+
+- date: 2017-06-20
+  id: include_dir
+  note: "a crate that lets you include entire directory contents in your binary – like `include_str!`, but on steroids. Thanks to [Michael Bryan](https://users.rust-lang.org/u/Michael-F-Bryan) for the suggestion!"
+
+- date: 2017-06-27
+  id: strum
+  note: "a crate that allows you to derive stringify and parse operations for your enums. Thanks to [lucab](https://users.rust-lang.org/u/lucab) for the suggestion!"
+
+- date: 2017-07-04
+  id: cargo-make
+  note: "a crate that helps you automate your build workflow beyond what cargo already offers. Thanks to [Sagie Gur Ari](https://users.rust-lang.org/u/sagiegurari) for the suggestion!"
+
 - date: 2017-07-11
   id: null
   note: "No crate was nominated."
+
+- date: 2017-07-18
+  id: extfsm
+  note: "a crate to help build finite state machines. Thanks to [Tony P.](https://users.rust-lang.org/u/prz) for the suggestion."
 
