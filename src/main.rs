@@ -101,7 +101,6 @@ fn validate_cotw_list(list: &[CotwEntry]) -> Result<()> {
                   "Crate of the Week entry is out of order (it follows an entry that has a later \
                    date).";
                   "date" => date.strftime("%F")?.to_string(), "crate" => id);
-            break;
         }
     }
 
