@@ -30,7 +30,7 @@ use time::Tm;
 lazy_static! {
     static ref LOG: slog::Logger = {
         use slog::Drain;
-        let decorator = slog_term::PlainSyncDecorator::new(std::io::stderr());
+        let decorator = slog_term::PlainSyncDecorator::new(io::stderr());
         let drain = slog_term::CompactFormat::new(decorator).build().fuse();
         let drain = slog_async::Async::new(drain).build().fuse();
         slog::Logger::root(drain, o!())
