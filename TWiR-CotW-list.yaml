@@ -390,3 +390,10 @@
   id: extfsm
   note: "a crate to help build finite state machines. Thanks to [Tony P.](https://users.rust-lang.org/u/prz) for the suggestion."
 
+- date: 2017-07-25
+  id: cute
+  note: >
+    a crate containing a macro to allow Python (or Haskell) style
+    comprehensions (e.g. `c![x / 2 for x in my_iter if (x & 1) == 0]`). Thanks
+    to [Willi Kappler](https://users.rust-lang.org/u/willi_kappler) for the
+    suggestion.
