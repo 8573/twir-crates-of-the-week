@@ -397,3 +397,9 @@
     comprehensions (e.g. `c![x / 2 for x in my_iter if (x & 1) == 0]`). Thanks
     to [Willi Kappler](https://users.rust-lang.org/u/willi_kappler) for the
     suggestion.
+
+- date: 2017-08-01
+  id: cargo-tarpaulin
+  note: >
+    a crate to collect test coverage of your Rust code. Thanks to [Colin
+    Kiegel](https://users.rust-lang.org/u/colin_kiegel) for the suggestion.
