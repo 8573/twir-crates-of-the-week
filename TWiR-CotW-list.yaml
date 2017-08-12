@@ -403,3 +403,10 @@
   note: >
     a crate to collect test coverage of your Rust code. Thanks to [Colin
     Kiegel](https://users.rust-lang.org/u/colin_kiegel) for the suggestion.
+
+- date: 2017-08-08
+  id: aesni
+  note: >
+    a crate providing a Rust AES (Rijndael) block ciphers implementation using
+    AES-NI. Thanks to [newpavlov](https://users.rust-lang.org/u/newpavlov) for
+    the suggestion.
